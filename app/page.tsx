@@ -78,7 +78,10 @@ export default function SplashPage() {
             transition={{ duration: 0.8, ease: 'easeInOut' }}
             style={{ overflow: 'hidden' }}
           >
-            <div className="h-full w-full bg-[url('/quintela-cycling-hero.jpg')] bg-cover bg-center opacity-40" />
+            <div
+              className="h-full w-full bg-cover bg-center opacity-40"
+              style={{ backgroundImage: `url('quintelas/quintela-cycling-hero.jpg')` }}
+            />
           </motion.div>
 
           {/* Lado direito — Casa: clipPath anima de diagonal para retângulo ao expandir */}
@@ -92,7 +95,10 @@ export default function SplashPage() {
             transition={{ duration: 0.8, ease: 'easeInOut' }}
             style={{ overflow: 'hidden' }}
           >
-            <div className="h-full w-full bg-[url('/casa-quintela-hero.jpg')] bg-cover bg-center opacity-55" />
+            <div
+              className="h-full w-full bg-cover bg-center opacity-55"
+              style={{ backgroundImage: `url('quintelas/casa-quintela-hero.jpg')` }}
+            />
           </motion.div>
 
         </div>
@@ -106,8 +112,8 @@ export default function SplashPage() {
               ? closing === 'casa'
                 ? '0%'
                 : closing === 'cycling'
-                ? '100%'
-                : '50%'
+                  ? '100%'
+                  : '50%'
               : '100%',
             height: '100%'
           }}
@@ -151,8 +157,8 @@ export default function SplashPage() {
               ? closing === 'cycling'
                 ? '0%'
                 : closing === 'casa'
-                ? '100%'
-                : '50%'
+                  ? '100%'
+                  : '50%'
               : '100%',
             height: '100%'
           }}
@@ -177,7 +183,7 @@ export default function SplashPage() {
                 QUINTELA
               </p>
               <p className="mt-6 sm:mt-12 text-xs sm:text-sm md:text-base text-gray-400 font-light tracking-widest">
-              MÁQUINAS • FLORESTA • JARDIM • SERVIÇO
+                MÁQUINAS • FLORESTA • JARDIM • SERVIÇO
               </p>
             </div>
           </div>
