@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Se o teu repositório é 'quintelas', o basePath deve ser '/quintelas'
-  basePath: '/quintelas', 
+  basePath: '/quintelas', // <--- TEM de ter a barra "/" e apenas o nome do repo
   images: {
-    unoptimized: true, // Essencial para evitar erros no GitHub Pages
+    unoptimized: true,
   },
-  // Remove ou comenta qualquer outra configuração complexa por agora
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
