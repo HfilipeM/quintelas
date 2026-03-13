@@ -80,7 +80,7 @@ export default function SplashPage() {
           >
             <div
               className="h-full w-full bg-cover bg-center opacity-40"
-              style={{ backgroundImage: `url('quintelas/quintela-cycling-hero.jpg')` }}
+              style={{ backgroundImage: `url('/quintela-cycling-hero.jpg')` }}
             />
           </motion.div>
 
@@ -97,7 +97,7 @@ export default function SplashPage() {
           >
             <div
               className="h-full w-full bg-cover bg-center opacity-55"
-              style={{ backgroundImage: `url('quintelas/casa-quintela-hero.jpg')` }}
+              style={{ backgroundImage: `url('/casa-quintela-hero.jpg')` }}
             />
           </motion.div>
 
