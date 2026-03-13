@@ -20,6 +20,11 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install
       - run: pnpm build
+      - name: Build project
+        run: |
+          echo "Iniciando build..."
+          pnpm build
+          echo "Build finalizado com sucesso."
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:

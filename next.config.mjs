@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
+  // Se o teu repositório é 'quintelas', o basePath deve ser '/quintelas'
+  basePath: '/quintelas', 
   images: {
-    unoptimized: true,
+    unoptimized: true, // Essencial para evitar erros no GitHub Pages
   },
-  output: 'export', // ← esta linha faz o Next.js gerar site estático
-  basePath: 'HfilipeM/quintelas'
-}
+  // Remove ou comenta qualquer outra configuração complexa por agora
+};
 
-export default nextConfig
+export default nextConfig;
